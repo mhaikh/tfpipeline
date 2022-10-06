@@ -9,16 +9,16 @@ acl = "private"
 
 provider "aws" {
     access_key=var.accesskey
-    secret_Key=var.secretKey
+    secret_key=var.secretKey
   region = "eu-west-1"
 }
 
 variable "accesskey"{
-    default="AKIAZTIMJ7JHBVP4TT3W"
+    default="AKIAZTIMJ7JHG3NRYWEC"
 
 }
 
 variable "secretkey"{
 
-    default="HrjI6fj9GK9DNEeFHlJJiO+aZHPdkwP6791+/gH6"
+    default="gANURfcCAqrwq8ZMOmM/+neahXJusxtvgpr3TAEN"
 }
