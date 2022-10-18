@@ -6,10 +6,10 @@ node{
     stage 'SANITY CHECK'
         bat 'terraform validate'
     stage 'PLAN'
-        bat 'terraform plan'
+        bat 'terraform plan -out "s3.tfplan"'
     stage 'FORMAT'
         bat 'terraform fmt'
     stage 'APPLY'
-        bat 'terraform apply'
+        bat 'terraform apply "s3.tfplan"'
     
 }
