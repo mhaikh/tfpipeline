@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "jayaci-first-st-bucket"
+	bucket = "vishnu-first-bucket-19Oct"
 }
 
 resource "aws_s3_bucket_acl" "example_bucket_acl" {
@@ -10,7 +10,7 @@ acl = "private"
 provider "aws" {
     access_key=var.accesskey
     secret_key=var.secretkey
-  region = "eu-west-1"
+    region = "eu-west-1"
 }
 
 variable "accesskey"{
@@ -19,6 +19,5 @@ variable "accesskey"{
 }
 
 variable "secretkey"{
-
     default="7gTYfdX8zEj/JpRkAY+qaBBkbU7z9U92WQIKw3V6"
 }
