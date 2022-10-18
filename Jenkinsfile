@@ -10,6 +10,5 @@ node{
     stage 'FORMAT'
         bat 'terraform fmt'
     stage 'APPLY'
-        bat 'terraform apply "s3.tfplan"'
-    
+        bat 'terraform apply "s3.tfplan"'    
 }
